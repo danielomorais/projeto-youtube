@@ -3,12 +3,12 @@
 
 * {
     margin: 0;
-    padding: 0;
 }
 
 body {
     height: 100%;
     background-color:#0d0d0d;
+    padding-top: 70px;
 }
 
 header {
@@ -18,6 +18,11 @@ header {
     height: 70px;
     background-color: #181818;
     gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 header div {
@@ -182,9 +187,9 @@ main {
     display: flex;
     flex-direction: column;
     width: 70%;
+    height: 100%;
     margin-top: 10px;
     margin-inline: auto;
-    overflow: hidden;
 }
 
 main > div > img {
@@ -252,6 +257,7 @@ fieldset {
     border: none;
     margin-top: 5px;
     padding: 0px;
+    overflow-x: scroll;
 }
 
 fieldset h2 {
@@ -343,6 +349,7 @@ section div > h2 {
 
 section div p {
     text-align: justify;
+    height: 60px;
     color: #efefef;
     font-family: Roboto;
     font-size: 14px;
@@ -350,7 +357,7 @@ section div p {
     font-weight: 500;
     line-height: 150%; /* 21px */
     margin-top: 15px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 span {
@@ -411,6 +418,7 @@ span div h4 {
 
 .container-videos {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
     gap: 10px;
 }
@@ -418,7 +426,6 @@ span div h4 {
 .bloco-video {
     cursor: pointer;
     text-align: center;
-    display: grid;
     margin-bottom: 5px;
 }
 
@@ -487,18 +494,36 @@ footer {
 }
 
 ::-webkit-scrollbar {
-    width: 12px; 
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #2a2a2a;
+    background: #0D0D0D;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #555;
     border-radius: 10px; 
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+::-webkit-scrollbar-thumb:active {
+    background: #696969;
+}
+
+@media (max-width: 725px) { 
+    .infos-canal {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .infos-canal button {
+        width: 60%;
+        margin-inline: auto;
+        margin-top: 15px;
+    }
+
+    .infos-canal > img {
+        margin: 0px 0px 10px 0px;
+    }
 }
