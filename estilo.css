@@ -250,46 +250,52 @@ main > div > img {
     color:#fff;
 }
 
-fieldset {
+.fieldset {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border: none;
     margin-top: 5px;
-    padding: 0px;
-    overflow-x: scroll;
+    gap: 50px;
+    overflow-x: auto;
+
 }
 
-fieldset h2 {
+.fieldset::-webkit-scrollbar {
+    height: 4px;
+}
+
+.fieldset h2 {
     color: #AAAAAA;
     font-size: 1.1em;
     font-family: Roboto;
     font-weight: 500;
+    text-align: center;
     cursor: pointer;
     padding-bottom: 15px;
     border: 2px solid transparent;
     margin: 0px;
+    flex: 1;
 }
 
-fieldset h2:hover {
+.fieldset h2:hover {
     border-bottom: 2px solid #717171;
 }
 
-fieldset h2:active {
+.fieldset h2:active {
     color: #F1F1F1;
     border-bottom: 2px solid #ffffff;
 }
 
-fieldset img {
+.fieldset img {
     border: 2px solid transparent;
     cursor: pointer;
 }
 
-fieldset img:hover {
+.fieldset img:hover {
     border-bottom: 2px solid #717171;
 }
 
-fieldset img:active {
+.fieldset img:active {
     color: #F1F1F1;
     border-bottom: 2px solid #ffffff;
 }
@@ -305,8 +311,9 @@ fieldset img:active {
 
 section {
     display: flex;
-    height: 118px;
+    align-items: center;
     margin-top: 30px;
+    width: 95%;
 }
 
 section > img {
@@ -320,10 +327,7 @@ section div {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    max-width: 70%;
     height: 118px;
-    overflow: inherit;
-    overflow-wrap: break-word;
 }
 
 section div > h1 {
@@ -357,11 +361,14 @@ section div p {
     font-weight: 500;
     line-height: 150%; /* 21px */
     margin-top: 15px;
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+section div p::-webkit-scrollbar {
+    width: 2px;
 }
 
 span {
-    display: flex;
     height: 100%;
     width: 100%;
     margin-top: 30px;
@@ -525,5 +532,25 @@ footer {
 
     .infos-canal > img {
         margin: 0px 0px 10px 0px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    section div {
+        width: 100%;
+    }
+
+    section img {
+        margin-bottom: 10px;
+    }
+
+    section div p {
+        overflow: auto;
     }
 }
