@@ -170,7 +170,7 @@ nav > div > div > label {
 
 .banner{
     width: 100%;
-    background-image: url(assets/images/bannerytb.png);
+    background-image: url(../assets/images/bannerytb.png);
     background-position: center;
     background-size: cover;
     display: flex;
