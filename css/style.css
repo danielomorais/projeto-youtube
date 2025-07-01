@@ -8,14 +8,14 @@
 body {
     height: 100%;
     background-color:#0d0d0d;
-    padding-top: 70px;
+    padding-top: 55px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0px 1%;
-    height: 70px;
+    padding-inline: 1.5vh;
+    height: 55px;
     background-color: #181818;
     gap: 10px;
     position: fixed;
@@ -47,14 +47,15 @@ header > div > img:active {
     transform: scale(1.05);
 }
 
-.header-central {
+.search-container {
     display: flex;
     justify-content: center;
+    position: relative;
     flex: 1;
 }
 
-.header-icons {
-    gap: 4px
+.search-input {
+    transition: width 0.3s ease;
 }
 
 header input {
@@ -114,55 +115,47 @@ header button:active {
     height: 34px;
 }
 
-nav {
+section {
     display: flex;
 }
 
 .nav-side{
-    width: 7.5vh;
-    height: 309px;
+    height: 250px;
     background-color:#0f0f0f;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 0.3%;
-    justify-content: space-between;
+    margin-inline: 1.5vh;
+    justify-content: space-around;
+    gap: 13px;
 }
 
-.nav-items {
+.nav-itens {
     display: flex;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
+    flex-direction: row;
+}
+
+section > div > div {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 18px;
+    border-radius: 8px;
+}
+
+section > div > div:hover {
+    background-color: #2e2e2e;
     cursor: pointer;
-    border: 1px solid transparent;
 }
 
-.nav-items:hover {
-    background-color: #2a2a2a;
-    border-radius: 5px;
-    transition: 0.2s;
-}
-
-.nav-items:active {
-    border: 1px solid #7e7e7e ;
-}
-
-nav > div > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-nav > div > div > img {
+section > div > div > img {
     width: 28px;
     height: 28px;
 }
 
-nav > div > div > label {
+section > div > div > label {
     color: #ffffff;
     font-family: Inter;
-    font-size: 11px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     cursor: pointer;
@@ -170,7 +163,7 @@ nav > div > div > label {
 
 .banner{
     width: 100%;
-    background-image: url(../assets/images/bannerytb.png);
+    background-image: url(../assets/images/banner-canal.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -553,4 +546,10 @@ footer {
     section div p {
         overflow: auto;
     }
+}
+
+@media screen and (max-width: 600px) {
+  .search-input {
+    display: none;
+  }
 }

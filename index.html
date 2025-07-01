@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Clone</title>
+    <title>Clone YouTube</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/icons/favicon.ico?v=1" type="image/x-icon">
 </head>
 <body>
     <header>
         <div>
-            <img src="./assets/icons/menu-icon.svg" alt="menu barra"></img>
+            <img src="./assets/icons/menu-icon.svg" alt="menu-hamburger"></img>
             <a href="https://youtube.com" target="_blank">
                 <img class="icon-ytb" src="./assets/icons/logo.svg" alt="youtube-icone">
             </a>
         </div>
         
-        <div class="header-central">
-            <input tyupe="serch" placeholder="Pesquisar">
-            <button><img src="./assets/icons/lupa.svg" alt="lupa de pesquisa"></button>
+        <div class="search-container">
+            <input tyupe="serch" placeholder="Pesquisar" class="search-input">
+            <button><img src="./assets/icons/lupa.svg" alt="lupa"></button>
             <button class="botao-mic"><img src="./assets/icons/microphone.svg"></button>
         </div>
         
@@ -26,43 +26,61 @@
             <img src="./assets/icons/upload.svg" alt="upload-video">
             <img src="./assets/icons/apps.svg" alt="apps">
             <img src="./assets/icons/bell.svg" alt="notificações">
-            <img src="assets/images/user--foto.png" alt="usuário" class="user-foto">
+            <img src="assets/images/avatar-notion.png" alt="usuário" class="user-foto">
         </div>
     </header>
 
-    <nav>
+    <section>
         <div class="nav-side">
-            <div class="nav-items">
+            <div class="nav-itens">
                 <img src="assets/icons/home.svg"></img>
                 <label>Início</label>
             </div>
-            <div class="nav-items">
+
+            <div class="nav-itens">
                 <img src="assets/icons/shorts.svg">
-                <label>Shorts</label>
+                <label>Short</label>
             </div>
-            <div class="nav-items">
+
+            <div class="nav-itens">
                 <img src="assets/icons/subscriptions.svg">
                 <label>Incrições</label>
             </div>
-            <div class="nav-items">
+
+            <div class="nav-itens">
                 <img src="assets/icons/library.svg">
                 <label>Biblioteca</label>
             </div>
+
+            <div class="nav-itens">
+                <img src="assets/icons/history.svg">
+                <label>Hitórico</label>
+            </div>
+
+            <div class="nav-itens">
+                <img src="assets/icons/like.svg">
+                <label>Curtidos</label>
+            </div>
+
+            <div class="nav-itens">
+                <img src="assets/icons/playlist.svg">
+                <label>Playlist</label>
+            </div>
         </div>
-        
+
         <div class="banner">
             <a href="https://www.linkedin.com/in/danielomorais/" target="_blank">
                 <img src="assets/icons/linkedin.svg">
             </a>
             <a href="https://github.com/dmors244/Daniel-M-Oliveira" target="_blank">
                 <img src="assets/icons/github.svg">
-            </a>            
+            </a>
             <a href="https://wa.me/qr/PIC763JV4K3WE1" target="_blank">
                 <img src="assets/icons/whatsapp.svg">
             </a>
         </div>
-    </nav>
-    
+    </section>
+  
     <main>
         <div class="infos-canal"> 
             <img src="assets/images/foto-do-canal.png" alt="foto-do-canal">
@@ -201,8 +219,8 @@
                 </div>
             </div>
         </span>
-        <br> <br>
     </main>
+    <br>
     <footer>
         <div class="marquee">
             APLICAÇÃO DE TAGS SEMÂNTICAS E "HTML ENTITES" COM <div style="color: #FF914D;">HTML5</div> | ESTILIZAÇÃO E UTILIZAÇÃO DE FLEXBOX E GRID FEITA PARA COMPATIBILIDADE COM DIFERENTES TAMANHOS DE TELA ATRAVÉS DO <div style="color: #38B6FF;">CSS3</div> | ACESSE MINHAS REDES SOCIAIS LOCALIZADAS DENTRO DO BANNER !
