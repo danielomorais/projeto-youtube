@@ -16,7 +16,9 @@ header {
     justify-content: space-between;
     padding-inline: 1.5vh;
     height: 55px;
-    background-color: #181818;
+    background-color: #181818d3;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     gap: 10px;
     position: fixed;
     top: 0;
@@ -115,8 +117,9 @@ header button:active {
     height: 34px;
 }
 
-section {
+section.hero {
     display: flex;
+    margin: 0%;
 }
 
 .nav-side{
@@ -163,10 +166,12 @@ section > div > div > label {
 
 .banner{
     width: 100%;
+    height: 300px;
     background-image: url(../assets/images/banner-canal.png);
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
 }
