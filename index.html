@@ -6,11 +6,12 @@
     <title>Clone YouTube</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/icons/favicon.ico?v=1" type="image/x-icon">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div class="left">
-            <img src="./assets/icons/menu-icon.svg" alt="Abrir menu navegação">
+            <img class="toggleMenu" src="./assets/icons/menu-icon.svg" alt="Abrir menu navegação">
             <a href="https://youtube.com" target="_blank">
                 <img class="icon-ytb" src="./assets/icons/logo.svg" alt="youtube-icone">
             </a>
@@ -32,68 +33,69 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="nav-side">
-            <div class="nav-itens">
-                <img src="assets/icons/home.svg"></img>
-                <label>Início</label>
-            </div>
-            
-            <div class="nav-itens">
-                <img src="assets/icons/subscriptions.svg">
-                <label>Incrições</label>
-            </div>
-            
-            <div class="nav-itens">
-                <img src="assets/icons/history.svg">
-                <label>Hitórico</label>
-            </div>
-
-            <div class="nav-itens">
-                <img src="assets/icons/playlist.svg">
-                <label>Playlists</label>
-            </div>
-
-            <div class="nav-itens">
-                <img src="assets/icons/library.svg">
-                <label>Biblioteca</label>
-            </div>
-            
-            <div class="nav-itens">
-                <img src="assets/icons/shorts.svg">
-                <label>Short</label>
-            </div>
-            
-            <div class="nav-itens">
-                <img src="assets/icons/live.svg">
-                <label>Ao Vivo</label>
-            </div>
-
-            <div class="nav-itens">
-                <img src="assets/icons/fogo.svg">
-                <label>Em Alta</label>
-            </div>
-
-            <div class="nav-itens">
-                <img src="assets/icons/like.svg">
-                <label>Curtidos</label>
-            </div>
+   <nav id="sideMenu">
+        <div class="nav-items">
+            <img src="assets/icons/home.svg" alt="Início">
+            <label>Início</label>
+        </div>
+        
+        <div class="nav-items">
+            <img src="assets/icons/subscriptions.svg" alt="Inscrições">
+            <label>Inscrições</label>
         </div>
 
-        <div class="banner">
-            <a href="https://www.linkedin.com/in/danielomorais/" target="_blank">
-                <img src="assets/icons/linkedin.svg">
-            </a>
-            <a href="https://github.com/dmors244/Daniel-M-Oliveira" target="_blank">
-                <img src="assets/icons/github.svg">
-            </a>
-            <a href="https://wa.me/qr/PIC763JV4K3WE1" target="_blank">
-                <img src="assets/icons/whatsapp.svg">
-            </a>
+        <div class="nav-items">
+            <img src="assets/icons/history.svg" alt="Histórico">
+            <label>Histórico</label>
         </div>
-    </section>
+        
+        <div class="nav-items">
+            <img src="assets/icons/playlist.svg" alt="Playlists">
+            <label>Playlists</label>
+        </div>
+
+        <div class="nav-items">
+            <img src="assets/icons/library.svg" alt="Biblioteca">
+            <label>Biblioteca</label>
+        </div>
+    
+        <div class="nav-items">
+            <img src="assets/icons/shorts.svg" alt="Shorts">
+            <label>Shorts</label>
+        </div>
+
+        <div class="nav-items">
+            <img src="assets/icons/live.svg" alt="Ao Vivo">
+            <label>Ao Vivo</label>
+        </div>
+
+        <div class="nav-items">
+            <img src="assets/icons/fogo.svg" alt="Em Alta">
+            <label>Em Alta</label>
+        </div>
+
+        <div class="nav-items">
+            <img src="assets/icons/like.svg" alt="Curtidos">
+            <label>Curtidos</label>
+        </div>
+    </nav>
   
     <main>
+         <div class="banner">
+            <a href="https://www.linkedin.com/in/danielomorais/" target="_blank">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/dmors244/Daniel-M-Oliveira" target="_blank">
+                <img src="assets/icons/github.svg" alt="GitHub">
+            </a>
+            <a href="https://wa.me/qr/PIC763JV4K3WE1" target="_blank">
+                <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+        </div>
+
+
+<!-- ========================================================= -->
+
         <div class="infos-canal"> 
             <img src="assets/images/foto-do-canal.png" alt="foto-do-canal">
             <div>
@@ -217,13 +219,12 @@
                 </div>
             </div>
         </span>
-    </main>
-    <br>
-    <footer>
+        <br>
+        <footer>
         <div class="marquee">
             APLICAÇÃO DE TAGS SEMÂNTICAS E "HTML ENTITES" COM <div style="color: #FF914D;">HTML5</div> | ESTILIZAÇÃO E UTILIZAÇÃO DE FLEXBOX E GRID FEITA PARA COMPATIBILIDADE COM DIFERENTES TAMANHOS DE TELA ATRAVÉS DO <div style="color: #38B6FF;">CSS3</div> | ACESSE MINHAS REDES SOCIAIS LOCALIZADAS DENTRO DO BANNER !
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    </main>
 </body>
 </html>

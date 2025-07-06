@@ -26,4 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  const toggleButton = document.querySelector('.left > img');
+  const sideMenu = document.querySelector('nav');
+
+  toggleButton.addEventListener('click', () => {
+    sideMenu.classList.toggle('hidden');
+  });
 });
