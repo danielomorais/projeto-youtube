@@ -250,28 +250,62 @@ main > div > img {
     line-height: normal;
 }
 
-.infos-canal button {
+.subscribe {
+    background-color: #F1F1F1;
     margin-left: auto;
     margin-right: 10px;
-    padding: 12px 18px;
+    padding: 11px 15px;
+    border: 1px solid transparent;
     border-radius: 50px;
     font-family: Roboto;
     border:none;
     outline:none;
     font-weight: 500;
     font-size: 15px;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.1s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #d8d8d8;
+    } &:active {
+        transform: scale(0.90);
+    }
 }
 
-.infos-canal button:hover {
+.subscribe.subscribed {
+    background-color: #272727;
     cursor: pointer;
-    background-color: #d8d8d8;
+    color: white;
+    padding: 11px 30px;
+    
+
+    &:hover {
+        background-color: #3F3F3F;
+    } &:active {
+        transform: scale(0.90);
+    }
 }
 
-.infos-canal button:active {
-    
-    background-color: #ff3131;
-    transform: scale(0.96);
+#member {
+    min-width: 120.92px;
+    background-color: transparent;
     color:#fff;
+    margin-left: flex-end;
+    padding: 11px 15px;
+    border: 1px solid #3F3F3F;
+    border-radius: 50px;
+    font-family: Roboto;
+    outline:none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.1s ease;
+
+    &:hover{
+        background-color: #3F3F3F;
+        cursor: pointer;
+    } &:active {
+        transform: scale(0.90);
+    }
 }
 
 .fieldset {
@@ -312,7 +346,7 @@ section {
     display: flex;
     align-items: center;
     margin-top: 30px;
-    width: 95%;
+    width: 90%;
 }
 
 section > img {
@@ -424,9 +458,10 @@ span div h4 {
 
 .container-videos {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    justify-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 10px;
+    justify-content: space-between;
 }
 
 .bloco-video {
@@ -534,10 +569,16 @@ footer {
         height: auto;
     }
 
-    .infos-canal button {
-        width: 60%;
+    #subscribeButton {
+        width: 40%;
         margin-inline: auto;
         margin-top: 15px;
+    }
+
+    #member{
+        width: 40%;
+        margin-inline: auto;
+        margin-top: 10px;
     }
 
     .infos-canal > img {

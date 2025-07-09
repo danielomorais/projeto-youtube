@@ -49,9 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.querySelector('.left > img');
   const sideMenu = document.querySelector('nav');
 
+  function handleSideMenuVisibility() {
+    if (mediaQuery.matches) {
+      sideMenu.classList.add('hidden');
+    } else {
+      sideMenu.classList.remove('hidden');
+    }
+  };
+
+  handleSideMenuVisibility();
+
+  mediaQuery.addEventListener('change', handleSideMenuVisibility);
+
   toggleButton.addEventListener('click', () => {
     sideMenu.classList.toggle('hidden');
-  });
+  }); 
 
   const items = document.querySelectorAll('.item');
 
@@ -60,5 +72,29 @@ document.addEventListener('DOMContentLoaded', () => {
       items.forEach(i => i.classList.remove('selected')); 
       item.classList.add('selected'); 
     });
+  });
+
+  const subbutton = document.getElementById('subscribeButton');
+
+  subbutton.addEventListener('click', () => {
+    if (subbutton.classList.contains('subscribed')) {
+      subbutton.textContent = 'Inscrever-se';
+      subbutton.classList.remove('subscribed');
+    } else {
+      subbutton.textContent = 'Inscrito 🔔';
+      subbutton.classList.add('subscribed');
+    }
+  });
+
+  const menbutton = document.getElementById('member');
+
+  menbutton.addEventListener('click', () => {
+    if (menbutton.classList.contains('subscribed')) {
+      menbutton.textContent = 'Seja membro';
+      menbutton.classList.remove('subscribed');
+    } else {
+      menbutton.textContent = 'Virou Sócio ⭐';
+      menbutton.classList.add('subscribed');
+    }
   });
 });
