@@ -132,17 +132,17 @@ header div.right {
     }
 }
 
-
 #sideMenu {
     height: 100%;
     width: 190px;
     margin-left: 2vh;
+    margin-right: 2vh;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     background-color:#0D0D0D;
     justify-content: space-around;
-    gap: 15px;
+    gap: 10px;
     transition: opacity 0.3s ease, visibility 0.3s ease, width 0.3s ease;
     }
     
@@ -162,7 +162,7 @@ header div.right {
         cursor: pointer;
     }
     
-    .nav-items {
+    .navs {
         display: flex;
         align-items: center;
         padding: 5px 12px;
@@ -176,23 +176,22 @@ header div.right {
         
         &:hover {
             background-color: #2e2e2e;
-            cursor: pointer;}
-
-        &:active {
-            border: 1px solid #4e4e4e;
+            cursor: pointer;
+        } &:active {
+            border: 1px solid #646464;
             background-color: #2e2e2e;
         }
     }
-    
-    /* ================================================================================== */
+
     .banner{
         width: 100%;
         max-height: 200px;
         background-image: url(../assets/images/banner-canal.png);
-        background-size: cover;
+        object-fit: cover;
         background-position: center;
         aspect-ratio: 16/9;
-        border-radius: 18px;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
@@ -221,7 +220,12 @@ main > div > img {
     display: flex;
     align-items: center;
     height: 148px;
-    margin-bottom: 10px;
+    margin: 8px 0px 5px 0px;
+}
+
+.foto-do-canal{
+    height: 128px;
+    width: 128px;
 }
 
 .infos-canal div {
@@ -235,7 +239,6 @@ main > div > img {
     font-size: 30.375px;
     font-style: normal;
     font-weight: 500;
-    
 }
 
 .infos-canal label {
@@ -276,57 +279,32 @@ main > div > img {
     align-items: center;
     border: none;
     margin-top: 5px;
-    gap: 50px;
+    gap: 25px;
     overflow-x: auto;
-
 }
 
 .fieldset::-webkit-scrollbar {
     height: 4px;
 }
 
-.fieldset h2 {
+.item {
+
     color: #AAAAAA;
     font-size: 1.1em;
     font-family: Roboto;
     font-weight: 500;
     text-align: center;
     cursor: pointer;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
     border: 2px solid transparent;
     margin: 0px;
-    flex: 1;
-}
 
-.fieldset h2:hover {
-    border-bottom: 2px solid #717171;
+    &:hover {
+        border-bottom: 2px solid #717171;
+    }
 }
-
-.fieldset h2:active {
+.item.selected {
     color: #F1F1F1;
-    border-bottom: 2px solid #ffffff;
-}
-
-.fieldset img {
-    border: 2px solid transparent;
-    cursor: pointer;
-}
-
-.fieldset img:hover {
-    border-bottom: 2px solid #717171;
-}
-
-.fieldset img:active {
-    color: #F1F1F1;
-    border-bottom: 2px solid #ffffff;
-}
-
-.selecionado {
-    color: #F1F1F1;
-    border-bottom: 2px solid #ffffff;
-}
-
-.selecionado:hover{
     border-bottom: 2px solid #ffffff;
 }
 
@@ -491,19 +469,20 @@ footer {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-color: #1f1f1f;
+    background-color: #202020;
     color: white;
     height: 25px;
     font-family: 'Roboto';
     font-size: 12px;
     font-weight: bold;
     word-spacing: 2px;
-    color: rgb(255, 255, 255)
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
 }
 .marquee {
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 30s linear infinite;
+    animation: marquee 35s linear infinite;
     position: absolute;
     right: 0;
 }
@@ -517,11 +496,38 @@ footer {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(-120%);
+        transform: translateX(-100%);
     }
 }
 
+@media (max-width: 768px) {
+    .banner {
+        background-image: url(../assets/images/banner-canal-P.png);
+    }
+
+    #sideMenu{
+        width: 80px;
+        margin-inline: 1vh;
+    }
+    .navs {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 0;
+        gap: 5px
+    }
+
+    #sideMenu > div > label {
+        font-size: 0.7em;
+    }
+
+}
+
 @media (max-width: 657px) { 
+
+    main {
+        width: 85%;
+    }
+
     .infos-canal {
         display: flex;
         flex-direction: column;
@@ -557,8 +563,6 @@ footer {
     section div p {
         overflow: auto;
     }
-    
-    /* --- NOVAS IMPLEMENTAÇÕES --- */
 
     header > div.search-container{
         display: flex;
