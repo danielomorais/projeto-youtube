@@ -15,6 +15,7 @@ body {
 
 header {
     display: flex;
+    justify-content: center;
     height: 55px;
     padding-inline: 2vh;
     background-color: #181818d3;
@@ -458,7 +459,7 @@ span div h4 {
 
 .container-videos {
     display: grid;
-    justify-items: start;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 10px;
     justify-content: space-between;
@@ -561,6 +562,11 @@ footer {
 
     main {
         width: 85%;
+    }
+
+    header {
+        padding-inline: 0.5vh;
+        gap: 5px;
     }
 
     .infos-canal {
