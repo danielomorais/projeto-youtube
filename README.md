@@ -32,6 +32,7 @@ Este projeto foi desenvolvido para proporcionar uma experiência prática na con
 
 - **HTML5:** Utilização de tags semânticas e entidades HTML para estruturação do conteúdo.
 - **CSS3:** Estilização avançada com Flexbox e Grid para garantir compatibilidade com diferentes tamanhos de tela.
+- **JS:** Responsividade de botões, seleção e adaptações do automáticas do layout para melhor usabilidade.
 
 ## Como Executar o Projeto
 
