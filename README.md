@@ -1,12 +1,16 @@
-# 🖥️Landing page YouTube
+# Landing page YouTube
 
-Este projeto é uma recriação da interface do YouTube, desenvolvida com o objetivo de aprimorar habilidades em desenvolvimento web, incluindo HTML5, CSS3 e técnicas de design responsivo.
+Este projeto é uma recriação da interface do YouTube, desenvolvida com o objetivo de aprimorar habilidades em desenvolvimento web, incluindo HTML5, CSS3, JavaScript e técnicas de design responsivo.
 
 ---
 
-## 🎥 Demonstração em Vídeo
+## 🖥️ Demonstração em diferente dispositivos
 
-![Demonstração do Projeto](/assets/landingpageYtb_demo_optimized.gif)
+![Demonstração mobile](/assets/images/mobile.png)
+
+![Demonstração tablets](/assets/images/tablet.png)
+
+![Demonstração descktop](/assets/images/descktop.png)
 
 ---
 
