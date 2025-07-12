@@ -6,10 +6,13 @@ Este projeto é uma recriação da interface do YouTube, desenvolvida com o obje
 
 ## 🖥️ Demonstração em diferente dispositivos
 
+### Mobile
 ![Demonstração mobile](/assets/images/mobile.png)
 
+### Tablets
 ![Demonstração tablets](/assets/images/tablet.png)
 
+### Descktops
 ![Demonstração descktop](/assets/images/descktop.png)
 
 ---
