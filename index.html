@@ -3,85 +3,122 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Clone</title>
+    <title>Clone YouTube</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/icons/favicon.ico?v=1" type="image/x-icon">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
-        <div>
-            <img src="./assets/icons/menu-icon.svg" alt="menu barra"></img>
+        <div class="left">
+            <img class="toggleMenu" src="./assets/icons/menu-icon.svg" alt="Abrir menu navegação">
             <a href="https://youtube.com" target="_blank">
                 <img class="icon-ytb" src="./assets/icons/logo.svg" alt="youtube-icone">
             </a>
         </div>
         
-        <div class="header-central">
-            <input tyupe="serch" placeholder="Pesquisar">
-            <button><img src="./assets/icons/lupa.svg" alt="lupa de pesquisa"></button>
-            <button class="botao-mic"><img src="./assets/icons/microphone.svg"></button>
+        <div class="search-container">
+            <input type="search" id="searchBar" class="search-input" placeholder="Pesquisar">
+            <button id="toggleSearch" class="search-btn">
+                <img src="./assets/icons/lupa.svg" alt="Pesquisar">
+            </button>
+            <button class="mic-btn">
+                <img src="./assets/icons/microphone.svg" alt="Pesquisar por voz">
+            </button>
         </div>
         
-        <div class="header-icons">
-            <img src="./assets/icons/upload.svg" alt="upload-video">
-            <img src="./assets/icons/apps.svg" alt="apps">
-            <img src="./assets/icons/bell.svg" alt="notificações">
-            <img src="assets/images/user--foto.png" alt="usuário" class="user-foto">
+        <div class="right">
+            <img src="./assets/icons/upload.svg" alt="Upload de vídeos">
+            <img src="./assets/icons/apps.svg" alt="Apps">
+            <img src="./assets/icons/bell.svg" alt="Notificações">
+            <img src="assets/images/avatar-notion-circular.png" class="user-foto" alt="Foto de usuário">
         </div>
     </header>
 
-    <nav>
-        <div class="nav-side">
-            <div class="nav-items">
-                <img src="assets/icons/home.svg"></img>
-                <label>Início</label>
-            </div>
-            <div class="nav-items">
-                <img src="assets/icons/shorts.svg">
-                <label>Shorts</label>
-            </div>
-            <div class="nav-items">
-                <img src="assets/icons/subscriptions.svg">
-                <label>Incrições</label>
-            </div>
-            <div class="nav-items">
-                <img src="assets/icons/library.svg">
-                <label>Biblioteca</label>
-            </div>
+    <nav id="sideMenu">
+        <div class="navs">
+            <img src="assets/icons/home.svg" alt="Início">
+            <label>Início</label>
         </div>
         
-        <div class="banner">
-            <a href="https://www.linkedin.com/in/danielomorais/" target="_blank">
-                <img src="assets/icons/linkedin.svg">
-            </a>
-            <a href="https://github.com/dmors244/Daniel-M-Oliveira" target="_blank">
-                <img src="assets/icons/github.svg">
-            </a>            
-            <a href="https://wa.me/qr/PIC763JV4K3WE1" target="_blank">
-                <img src="assets/icons/whatsapp.svg">
-            </a>
+        <div class="navs">
+            <img src="assets/icons/subscriptions.svg" alt="Inscrições">
+            <label>Inscrições</label>
+        </div>
+
+        <div class="navs">
+            <img src="assets/icons/history.svg" alt="Histórico">
+            <label>Histórico</label>
+        </div>
+
+        <div class="navs">
+            <img src="assets/icons/playlist.svg" alt="Playlists">
+            <label>Playlists</label>
+        </div>
+
+        <div class="navs">
+            <img src="assets/icons/library.svg" alt="Biblioteca">
+            <label>Biblioteca</label>
+        </div>
+    
+        <div class="navs">
+            <img src="assets/icons/shorts.svg" alt="Shorts">
+            <label>Shorts</label>
+        </div>
+
+        <div class="navs">
+            <img src="assets/icons/live.svg" alt="Ao Vivo">
+            <label>Ao Vivo</label>
+        </div>
+
+        <div class="navs">
+            <img src="assets/icons/fogo.svg" alt="Em Alta">
+            <label>Em Alta</label>
+        </div>
+
+        <div class="navs">
+            <img src="assets/icons/like.svg" alt="Curtidos">
+            <label>Curtidos</label>
         </div>
     </nav>
-    
+  
     <main>
-        <div class="infos-canal"> 
-            <img src="assets/images/foto-do-canal.png" alt="foto-do-canal">
-            <div>
-                <h1>Daniel Morais <img src="assets/icons/check-circle.svg"></h1>
-                <label>10 mil inscritos</label>
+        <footer>
+            <div class="marquee">
+                ESTRUTURA SEMÂNTICA E "HTML ENTITES" COM <div style="color: #FF914D;">HTML5</div> &bull; ESTILIZAÇÃO, ADAPTAÇÕES E REPONSIVIDADE COM FLEXBOX E GRID LAYOUT FEITO ATRAVÉS DO <div style="color: #38B6FF;">CSS3</div> &bull; INTERATIVIDADE COM <div style="color: #FFDE58;">JAVASCRIPT</div> &bull; ACESSE MINHAS REDES SOCIAIS LOCALIZADAS DENTRO DO BANNER !!
             </div>
-            <button>Inscrever-se</button>
+        </footer>
+
+        <div class="banner">
+            <a href="https://www.linkedin.com/in/danielomorais/" target="_blank">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/danielomorais" target="_blank">
+                <img src="assets/icons/github.svg" alt="GitHub">
+            </a>
+            <a href="https://wa.me/qr/PIC763JV4K3WE1" target="_blank">
+                <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+        </div>
+
+        <div class="infos-canal"> 
+            <img src="assets/images/avatar-notion-circular.png" class="foto-do-canal" alt="foto-do-canal">
+            <div>
+                <h1>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h1>
+                <label>44 mil inscritos</label>
+            </div>
+            <button id="subscribeButton" class="subscribe">Inscrever-se</button>
+            <button id="member">Seja membro</button>
         </div>
         
         <div class="fieldset">
-            <h2 class="selecionado">Início</h2>                     
-            <h2>Vídeos</h2>                        
-            <h2>Shorts</h2>                    
-            <h2>Playlists</h2>           
-            <h2>Comunidade</h2>
-            <h2>Canais</h2>
-            <h2>Sobre</h2>
-            <img src="assets/icons/lupa.svg">
+            <h2 class="item">Início</h2>                     
+            <h2 class="item">Vídeos</h2>                        
+            <h2 class="item">Shorts</h2>                    
+            <h2 class="item">Playlists</h2>           
+            <h2 class="item">Comunidade</h2>
+            <h2 class="item">Canais</h2>
+            <h2 class="item">Sobre</h2>
         </div>
 
         <section>
@@ -89,8 +126,7 @@
             <div>
                 <h1>Título do vídeo em destaque</h1>
                 <h2>18 mil visalizações &bull; há 11 dias</h2>
-
-                <p>Este projeto foi desenvolvido com o objetivo de proporcionar uma experiência prática, aplicando meus conhecimentos em programação web para enfrentar desafios reais, como a criação de uma landing page. Entre em contato! Utilize os ícones das redes sociais localizados no banner.</p>
+                <p>Este projeto foi desenvolvido com o objetivo de proporcionar uma experiência prática, aplicando meus conhecimentos em programação web. Entre em contato! Utilize os ícones das redes sociais localizados no banner.</p>
             </div>
         </section>
 
@@ -98,52 +134,45 @@
             <div class="titulo-sessao">
                 <h1>Vídeos mais recentes do canal</h1>
                 <div>
-                    <img src="assets/icons/play.svg" alt="pqueno play">
+                    <img src="assets/icons/play.svg" alt="play">
                     <h4>Reproduzir todos</h4>
                 </div>
-            </div>   
+            </div>
                 
             <div class="container-videos">
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>1 mil visualizações &bull; há 4 horas</h2>
                 </div>
 
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>4 mil visualizações &bull; há 10 horas</h2>
                 </div>
 
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>2 mil visualizações &bull; há 1 dias</h2>
                 </div>
 
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>14 mil visualizações &bull; há 2 dias</h2>
                 </div>
 
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>17 mil visualizações &bull; há 1 sem</h2>
-                </div>
-
-                <div class="bloco-video">
-                    <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
-                    <h2>33 mil visualizações &bull; há 2 sem</h2>
                 </div>
             </div>
         </span>
@@ -152,7 +181,7 @@
             <div class="titulo-sessao">
                 <h1>Vídeos mais vistos do canal</h1>
                 <div>
-                    <img src="assets/icons/play.svg" alt="pqueno play">
+                    <img src="assets/icons/play.svg" alt="play">
                     <h4>Reproduzir todos</h4>
                 </div>
             </div>   
@@ -160,53 +189,40 @@
             <div class="container-videos">
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>170 mil visualizações &bull; há 2 sem</h2>
                 </div>
 
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>75 mil visualizações &bull; há 3 sem</h2>
                 </div>
 
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>44 mil visualizações &bull; há 1 mês</h2>
                 </div>
 
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>33 mil visualizações &bull; há 2 sem</h2>
                 </div>
 
                 <div class="bloco-video">
                     <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
+                    <h1>Título do vídeo aqui</h1>
+                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg" alt="Canal verificado"></h2>
                     <h2>17 mil visualizações &bull; há 1 sem</h2>
-                </div>
-
-                <div class="bloco-video">
-                    <img src="assets/images/thumbnail.png" alt="thumbnail">
-                    <h1 class="nome--video nome--video--sessao" >Título do vídeo aqui</h1>
-                    <h2>Daniel Morais <img src="assets/icons/check-circle.svg"></h2>
-                    <h2>14 mil visualizações &bull; há 2 dias</h2>
                 </div>
             </div>
         </span>
-        <br> <br>
     </main>
-    <footer>
-        <div class="marquee">
-            APLICAÇÃO DE TAGS SEMÂNTICAS E "HTML ENTITES" COM <div style="color: #FF914D;">HTML5</div> | ESTILIZAÇÃO E UTILIZAÇÃO DE FLEXBOX E GRID FEITA PARA COMPATIBILIDADE COM DIFERENTES TAMANHOS DE TELA ATRAVÉS DO <div style="color: #38B6FF;">CSS3</div> | ACESSE MINHAS REDES SOCIAIS LOCALIZADAS DENTRO DO BANNER !
-        </div>
-    </footer>
 </body>
 </html>
