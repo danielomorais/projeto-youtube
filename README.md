@@ -27,7 +27,7 @@ Este projeto é uma recriação da interface do YouTube, desenvolvida com o obje
 
 ## Descrição
 
-Este projeto foi desenvolvido para proporcionar uma experiência prática na construção de interfaces web modernas. A recriação da interface do YouTube permite enfrentar desafios reais, como a criação de uma landing page responsiva e interativa.
+Este projeto foi desenvolvido para proporcionar uma experiência prática na construção de interfaces web modernas. A recriação da interface do YouTube permite enfrentar desafios reais, como a criação de uma homepage responsiva e interativa.
 
 ## Funcionalidades
 
@@ -38,8 +38,8 @@ Este projeto foi desenvolvido para proporcionar uma experiência prática na con
 ## Tecnologias Utilizadas
 
 - **HTML5:** Utilização de tags semânticas e entidades HTML para estruturação do conteúdo.
-- **CSS3:** Estilização avançada com Flexbox e Grid para garantir compatibilidade com diferentes tamanhos de tela.
-- **JS:** Responsividade de botões, seleção e adaptações do automáticas do layout para melhor usabilidade.
+- **CSS3:** Estilização e resposividade com Flexbox e Grid para garantir compatibilidade com diferentes tamanhos de tela.
+- **JS:** Interatividade de botões, seleção e adaptações do automáticas do layout para melhor usabilidade.
 
 ## Como Executar o Projeto
 
